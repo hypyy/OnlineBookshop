@@ -1,0 +1,100 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> 客户端表单简单验证</title>
+    <script>
+        function check(){
+            var username  = document.myForm.userName.value;
+            if(username==""){
+                alert("用户名不能为空!")
+                //调用表单元素对象的focus方法使得该表单元素对象重新获得输入焦点
+                document.myForm.userName.focus();
+                return false;
+            }
+
+            var xb = document.myForm.gender;
+            var flag = false;
+
+            for(var i = 0; i<xb.length;i++){
+                if(xb[i].checked){
+                    flag =  true;
+                }
+            }
+            if(!flag){
+                alert("请选择性别！");
+                return false;
+            }
+
+            var likes = document.myForm.like;
+            var flag2= false;
+            for(var i =0; i<likes.length;i++){
+                if(likes[i].checked){
+                    flag2 = true;
+                }
+            }
+            if(!flag2){
+                alert("请选择爱好");
+                return false;
+            }
+
+            var province = document.myForm.province.value;
+            if(province==" "){
+                alert("请选择省份!");
+                return false;
+            }
+
+            //前面验证都通过，最后返回 true；如果前面有一处没有通过验证，函数返回false，停止运行
+            //函数返回false，则表单提交被终止，不会再跳向action指向的页面
+            //函数返回true，则表示通过验证，继续执行表单提交，跳向action指向页面
+            return true;
+
+
+        }
+    </script>
+
+</head>
+<body>
+
+<form action = "tim.html" name="myForm" onsubmit="return check();">
+    <table>
+        <tr>
+            <td>用户名：</td>
+            <td><input type ="text" name="userName"/></td>
+        </tr>
+        <tr>
+            <td>性  别：</td>
+            <td>
+                <input type="radio" name="gender" value="male"/>男&nbsp;&nbsp;
+                <input type="radio" name="gender" value="female"/>女
+            </td>
+        </tr>
+        <tr>
+            <td>爱  好：</td>
+            <td>
+                <input type="checkbox" name="like" value="Java"/>Java &nbsp;&nbsp;
+                <input type="checkbox" name="like" value="C"/>C &nbsp;&nbsp;
+                <input type="checkbox" name="like" value="Web"/>Web
+            </td>
+        </tr>
+        <tr>
+            <td>省  份：</td>
+            <td>
+                <select name="province">
+                    <option value=" ">--请选择--</option>
+                    <option value="anhui">安徽</option>
+                    <option value="beijing">北京</option>
+                    <option value="xizang">西藏</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="提交"/>
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

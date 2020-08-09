@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="备份1.css">
+</head>
+<body>
+<div class="header">
+    <span id="welcome">欢迎</span>
+    <div class="title">
+        <div class="aaa">
+            <img src="img/bookshop.png" width="30px" height="30px">
+            <span>Online BookShop</span>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="left">
+        <div class="menu">功能菜单导航</div>
+        <ul>
+            <li><a href="#">书籍信息管理</a></li>
+            <li><a href="#">书籍信息管理</a></li>
+            <li><a href="#">书籍信息管理</a></li>
+            <li><a href="#">书籍信息管理</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <form action="http://baidu.com" method="post" name="myform" onsubmit="return check();">
+            <table align="left">
+                <tr>
+                    <th colspan="2" align="left">基本信息</th>
+                </tr>
+
+                <tr>
+                    <td width="100px">书号:</td>
+                    <td><input type="text" name="booknumber" /></td>
+                </tr>
+                <tr>
+                    <td width="100px">书名:</td>
+                    <td><input type="text" name="bookname"/></td>
+                </tr>
+                <tr>
+                    <td width="100px">作者:</td>
+                    <td><input type="text" name="writer"/></td>
+                </tr>
+                <tr>
+                    <td width="100px">出版社:</td>
+                    <td>
+                        <select name="publishinghouse">
+                            <option>请选择</option>
+                            <option>新华出版社</option>
+                            <option>合肥学院出版社</option>
+                            <option>清华出版社</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100px">出版日期:</td>
+                    <td><input type="text" name="date"/></td>
+                </tr>
+                <tr>
+                    <td width="100px">价格:</td>
+                    <td><input type="text" name="price"/></td>
+                </tr>
+                <tr>
+                    <td width="100px">库存位置:</td>
+                    <td><input type="text" name="location"/></td>
+                </tr>
+                <tr>
+                    <td width="100px">类别:</td>
+                    <td>
+                        <input type="radio" name="category" value="ordinary"/>普通
+                        <input type="radio" name="category" value="boutique"/>精品
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100px">内容简介:</td>
+                    <td>
+                        <textarea rows="8" cols="70" name="wenbenkuang"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="提交"/>
+                        <input type="reset" value="重置"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+<div class="footer">
+
+</div>
+<script src="备份1.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+*{
+    margin: 0 auto;
+}
+body{
+    font-size: 12px;
+    background-color:#b8d3f1;
+}
+.header{
+    position: relative;
+    margin-top: 80px;
+    width: 1000px;
+    height: 80px;
+    background-image: url("../img/logo_bookshop.gif");
+}
+.main{
+    width:1000px;
+    height: 450px;
+    background-color: #EEF2FB;
+}
+.footer{
+    margin-bottom: 80px;
+    width: 1000px;
+    height: 48px;
+}
+.main .left{
+    width: 182px;
+    height:100%;
+    float:left;
+    background-color:#EEF2FB;
+}
+.main .right{
+    width: 818px;
+    height: 100%;
+    float:right;
+    background-color:#EEF2FB;
+}
+ul{
+    list-style: none;
+    padding-left: 0px;
+}
+li{
+    line-height: 40px;
+    border-bottom: 1px dashed deepskyblue;
+    text-align: center;
+}
+a{
+    color:#666;
+    text-decoration: none;
+
+}
+a:hover{
+    color:#ff8400;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.main .right table{
+    width: 95%;
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+}
+.main .right table tr{
+    height: 30px;
+    text-align: center;
+}
+.main .right table tr td{
+    border: 1px solid #b8d3f1;
+}
+.main .right table tr th{
+    border: 1px solid #b8d3f1;
+}
+#welcome{
+    position: absolute ;
+    left: 900px;
+    top: 50px;
+    font-weight: bold;
+}

@@ -1,0 +1,112 @@
+*{
+    margin: 0 auto;
+}
+body{
+    font-size: 12px;
+    background:linear-gradient(45deg,black,white);
+}
+.header{
+    position: relative;
+    width: 1000px;
+    height: 60px;
+    background-color: black;
+    text-align: center;
+    padding-top: 25px;
+}
+.main{
+    width:1000px;
+    height: 450px;
+    background-color:black;
+}
+.footer{
+    margin-bottom: 80px;
+    width: 1000px;
+    height: 48px;
+    background-color: black;
+    clear:both;
+}
+.main .left{
+    width: 182px;
+    height:100%;
+    float:left;
+    background-color:#eeeeee;
+}
+.main .right{
+    width: 818px;
+    height: 100%;
+    float:right;
+    background-color:white;
+}
+ul{
+    list-style: none;
+    padding-left: 0px;
+    font-weight: bold;
+}
+li{
+    line-height: 40px;
+    border-bottom: 1px dashed white;
+    text-align: center;
+}
+a{
+    color:#666;
+    text-decoration: none;
+
+}
+a:hover{
+    color:#ff8400;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.main .right table{
+    width: 95%;
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+}
+.main .right table tr{
+    height: 30px;
+    text-align: center;
+}
+.main .right table tr td{
+    border: 1px solid black;
+    font-family: "Berlin Sans FB";
+}
+.main .right table tr th{
+    border: 1px solid black;
+}
+#welcome{
+    position: absolute ;
+    left: 900px;
+    top: 50px;
+    font-weight: bold;
+    color: white;
+}
+.title{
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px snow;
+}
+.aaa{
+    width:400px;
+    height:80px;
+    transition:1s;
+}
+.aaa:hover{
+    transform:rotate(360deg);
+    font-weight: bold;
+    font-size: 40px;
+}
+img:hover{
+    transform: scale(1.3);
+}
+.menu{
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 20px;
+    border-bottom: 1px dashed black;
+    font-family: "幼圆";
+}
